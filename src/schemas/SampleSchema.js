@@ -19,4 +19,4 @@ const SampleSchema = new Schema({
 { versionKey: false });
 
 
-export const Chat = mongoose.model('Chat', ChatSchema);
+export const Sample = mongoose.model('Sample', SampleSchema);

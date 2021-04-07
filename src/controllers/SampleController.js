@@ -1,5 +1,5 @@
 
-import { SampleSchema } from "../schemas/SampleSchema";
+import { Sample } from "../schemas/SampleSchema";
 
 /**
  * 
@@ -7,8 +7,8 @@ import { SampleSchema } from "../schemas/SampleSchema";
  * @param {Object} res 
  */
 export const storeSample = (req, res) => {
-    const sampleSchema = new SampleSchema(req.body);
-    sampleSchema.save((error, result) => {
+    const sample = new Sample(req.body);
+    sample.save((error, result) => {
         if (error) {
             res.error(error);
         } else {
